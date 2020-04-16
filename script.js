@@ -10,15 +10,16 @@ function changeClasses() {
 
     articleHeader.textContent = "Welcome to the Barry Griffith blog" 
 
-
    var allArticleHeaders = document.querySelectorAll(".article__header")
    for(let i = 0; i < allArticleHeaders.length; i++){
        allArticleHeaders[i].classList.add("important")
    }
 
-
    const dashedClass = document.querySelector(".dashed")
    dashedClass.classList.remove("dashed")
+
+   //Another syntax to do the remove exercise
+  //document.querySelector(".dashed").classList.remove("dashed") 
 
    const articleFooter = document.querySelector(".article__footer")
    articleFooter.classList.add("goldenrod")
@@ -26,7 +27,7 @@ function changeClasses() {
 }
 
 
-    changeClasses()
+changeClasses()
 
 
     
